@@ -1,0 +1,13 @@
+name: OpenAI GPT-3.5 Turbo
+version: 1.0.0
+
+models:
+  - name: OpenAI GPT-3.5 Turbo
+    provider: openai
+    model: gpt-3.5-turbo
+    apiKey: ${{ inputs.OPENAI_API_KEY }}
+    systemMessage: "You are an expert software developer. You give helpful and concise responses."
+    roles:
+      - chat
+      - edit
+      - apply

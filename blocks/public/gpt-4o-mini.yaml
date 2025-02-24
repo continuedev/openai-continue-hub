@@ -1,0 +1,13 @@
+name: OpenAI GPT-4o Mini
+version: 1.0.0
+
+models:
+  - name: OpenAI GPT-4o Mini
+    provider: openai
+    model: gpt-4o-mini
+    apiKey: ${{ inputs.OPENAI_API_KEY }}
+    systemMessage: "You are an expert software developer. You give helpful and concise responses."
+    roles:
+      - chat
+      - edit
+      - apply
