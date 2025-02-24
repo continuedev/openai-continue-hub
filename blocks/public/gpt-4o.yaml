@@ -6,7 +6,6 @@ models:
     provider: openai
     model: gpt-4o
     apiKey: ${{ inputs.OPENAI_API_KEY }}
-    systemMessage: "You are an expert software developer. You give helpful and concise responses."
     roles:
       - chat
       - edit
