@@ -1,5 +1,6 @@
 name: OpenAI GPT-3.5 Turbo
 version: 1.0.0
+schema: v1
 
 models:
   - name: OpenAI GPT-3.5 Turbo
