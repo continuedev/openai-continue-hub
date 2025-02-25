@@ -1,0 +1,11 @@
+name: o1-mini
+version: 1.0.0
+schema: v1
+
+models:
+  - name: o1-mini
+    provider: openai
+    model: o1-mini
+    apiKey: ${{ inputs.OPENAI_API_KEY }}
+    roles:
+      - chat
