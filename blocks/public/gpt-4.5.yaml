@@ -1,11 +1,11 @@
-name: OpenAI GPT-4o
-version: 1.0.1
+name: OpenAI GPT-4.5 Preview
+version: 1.0.0
 schema: v1
 
 models:
-  - name: OpenAI GPT-4o
+  - name: OpenAI GPT-4.5 Preview
     provider: openai
-    model: gpt-4o
+    model: gpt-4.5-preview-2025-02-27
     apiKey: ${{ inputs.OPENAI_API_KEY }}
     roles:
       - chat

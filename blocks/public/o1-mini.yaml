@@ -1,5 +1,5 @@
 name: o1-mini
-version: 1.0.0
+version: 1.0.1
 schema: v1
 
 models:
@@ -9,3 +9,6 @@ models:
     apiKey: ${{ inputs.OPENAI_API_KEY }}
     roles:
       - chat
+    defaultCompletionOptions:
+      contextLength: 128000
+      maxTokens: 65536

@@ -1,5 +1,5 @@
 name: o1
-version: 1.0.0
+version: 1.0.1
 schema: v1
 
 models:
@@ -9,3 +9,6 @@ models:
     apiKey: ${{ inputs.OPENAI_API_KEY }}
     roles:
       - chat
+    defaultCompletionOptions:
+      contextLength: 200000
+      maxTokens: 100000

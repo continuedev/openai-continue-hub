@@ -1,5 +1,5 @@
 name: OpenAI GPT-4o Mini
-version: 1.0.0
+version: 1.0.1
 schema: v1
 
 models:
@@ -11,3 +11,6 @@ models:
       - chat
       - edit
       - apply
+    defaultCompletionOptions:
+      contextLength: 128000
+      maxTokens: 16384
