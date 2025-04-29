@@ -1,5 +1,5 @@
 name: OpenAI GPT-4.1 mini
-version: 1.0.0
+version: 1.0.1
 schema: v1
 
 models:
@@ -14,4 +14,4 @@ models:
     defaultCompletionOptions:
       contextLength: 1047576
       maxTokens: 32768
-
+    useLegacyCompletionsEndpoint: false
