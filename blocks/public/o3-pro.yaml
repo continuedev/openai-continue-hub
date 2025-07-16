@@ -1,0 +1,16 @@
+name: o3-pro
+version: 1.0.1
+schema: v1
+
+models:
+  - name: o3-pro
+    provider: openai
+    model: o3-pro
+    apiKey: ${{ inputs.OPENAI_API_KEY }}
+    roles:
+      - chat
+    defaultCompletionOptions:
+      contextLength: 200000
+      maxTokens: 100000
+    capabilities:
+      - image_input
