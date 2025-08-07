@@ -15,4 +15,4 @@ models:
       - tool_use
     defaultCompletionOptions:
       contextLength: 400000
-      maxTokens: 128000
+      max_completion_tokens: 128000
