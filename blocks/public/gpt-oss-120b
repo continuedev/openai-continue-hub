@@ -1,0 +1,18 @@
+name: gpt-oss-120b
+version: 1.0.0
+schema: v1
+
+models:
+  - name: gpt-oss-120b
+    provider: openai
+    model: gpt-oss-120b
+    apiKey: ${{ inputs.OPENAI_API_KEY }}
+    roles:
+      - chat
+      - edit
+      - apply
+    capabilities:
+      - tool_use
+    defaultCompletionOptions:
+      contextLength: 131072
+      maxTokens: 131072
