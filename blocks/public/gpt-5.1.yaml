@@ -1,0 +1,17 @@
+name: GPT 5.1
+version: 1.0.4
+schema: v1
+models:
+  - name: GPT 5.1
+    provider: openai
+    model: gpt-5.1
+    apiKey: ${{ inputs.OPENAI_API_KEY }}
+    roles:
+      - chat
+      - edit
+      - apply
+    capabilities:
+      - tool_use
+    defaultCompletionOptions:
+      contextLength: 400000
+      maxTokens: 128000
